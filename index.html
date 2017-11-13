@@ -189,8 +189,9 @@
 </head>
 <body>
   <script type="text/javascript">
-  d3.tsv("flight_delay.tsv", function(d) {
-      // transform data
+  // Load Data
+  d3.tsv("data/flight_delay.tsv", function(d) {
+      // Transform data
       d['year'] = +d['year'];
       d['month'] = +d['month'];
       d['arr_flights'] = d['arr_flights']/5;
