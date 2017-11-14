@@ -9,9 +9,9 @@
       font-family:sans-serif;
       font-size: 15px;}
     p { font-family:sans-serif;
-      font-size: 12px;}
+      font-size: 14px;}
     dl { font-family:sans-serif;
-      font-size: 12px;}
+      font-size: 14px;}
 
   </style>
   <h1>Flight Delay Causes</h1>
@@ -180,14 +180,16 @@
   </div>
   <dl>
   <dt>Delay Causes:</dt> 
-  <dd>Carrier Delay: Due to circumstances within the airline's control (e.g. maintenance or crew problems, aircraft cleaning, baggage loading, fueling, etc.).</dd>
-  <dd>Weather Delay: Due to significant meteorological conditions (actual or forecasted) that, in the judgment of the carrier, delays or prevents the operation of a flight such as tornado, blizzard or hurricane.</dd>
-  <dd>National Aviation System (NAS) Delay: Due to the national aviation system that refer to a broad set of conditions, such as non-extreme weather conditions, airport operations, heavy traffic volume, and air traffic control.</dd>
-  <dd>Late Aircraft Delay: Due to a previous flight with same aircraft arriving late and causing the present flight to depart late.</dd>
-  <dd>Security Delay: Due to evacuation of a terminal or concourse, re-boarding of aircraft because of security breach, inoperative screening equipment and/or long lines in excess of 29 minutes at screening areas.</dd>
+  <dd>Carrier Delay: Due to the airline's control (e.g. aircraft cleaning, baggage loading, fueling)</dd>
+  <dd>Weather Delay: Due to significant weather conditions (e.g. tornado, blizzard or hurricane)</dd>
+  <dd>NAS Delay: Due to the national aviation system (e.g. non-extreme weather conditions, airport operations)</dd>
+  <dd>Late Aircraft Delay: Due to a previous flight with same aircraft arriving late</dd>
+  <dd>Security Delay: Due to security breach, inoperative screening equipment and/or long lines (> 29 minutes) at screening areas.</dd>
    </dl>
+   
 </head>
 <body>
+  <div id="textContainer">
   <script type="text/javascript">
   // Load Data
   d3.tsv("data/flight_delay.tsv", function(d) {
@@ -200,10 +202,11 @@
       d['value'] = d['value']/d['arr_flights'];
       return d;
   },draw);
+
   </script>
   <h2>More delay during summer and winter holidays?</h1>
-  <p> The delay time per delayed flight is higher during summer holidays and winter holidays. The major contributing factors are flight delays caused by the airline's control (e.g. maintenance or crew problems) and late previous aircraft. </p>
-  <p> Since a tight and unorganized flight schedule can impact airline’s control and previous aircraft arrival, we are wondering if the revenue-driven airline industry is trying to move more passengers at the expenses of increasing delays.  </p>
+  <p> The delay time per delayed flight is higher during summer holidays and winter holidays. The major contributing factors are flight delays caused by the airline's control (e.g. maintenance or crew problems) and late previous aircraft. Since a tight and unorganized flight schedule can impact airline’s control and previous aircraft arrival, we are wondering if the revenue-driven airline industry is trying to move more passengers at the expenses of increasing delays.  </p>
   <p>References: The data set which contains information on United State flight delays and performance comes from <a href="https://www.transtats.bts.gov/OT_Delay/OT_DelayCause1.asp"> RITA</a>.</p>
+  </div>
 </body>
 </html>
