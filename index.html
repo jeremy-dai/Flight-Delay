@@ -105,11 +105,11 @@
                               .1 * height,
                               .7 * width,
                               .8 * height);
-          var mx = myChart.addMeasureAxis("x", "value");
-          var my = myChart.addCategoryAxis("y", "month");
-          var c = myChart.addSeries("delay_type", dimple.plot.area);
-          c.interpolation = "step";
-          c.lineWeight = 1;
+          var my = myChart.addMeasureAxis("y", "value");
+          var mx = myChart.addCategoryAxis("x", "month");
+          var mb = myChart.addSeries("delay_type", dimple.plot.area);
+          mb.interpolation = "step";
+          mb.lineWeight = 1;
           var mlegend = myChart.addLegend( .05 * width,
                               .03 * height,
                               .7 * width,
@@ -117,11 +117,11 @@
           mlegend.fontSize = "12px";
 
           // Change the attributes of axes
-          my.title = 'Month';
-          my.fontSize="12px";
-          mx.title = 'Delay Time per Delay Flight (min)'
+          mx.title = 'Month';
           mx.fontSize="12px";
-          mx.overrideMax = 100;
+          my.title = 'Delay Time per Delay Flight (min)'
+          my.fontSize="12px";
+          my.overrideMax = 100;
 
           // Add a storyboard to the main chart and set the tick event
           var story = myChart.setStoryboard("year", onTick);
