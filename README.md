@@ -24,8 +24,20 @@ This design uses a ‘reader-driven’ structure. Reader can explore the data by
 Also, the animation helps guide the reader through the years.
  
 Visual encodings are the mapping of data to display elements.
-- Delay time and month are planar variables (position x and y) since they are the most vital variables. 
+- Month and Delay time  are planar variables (position x and y) since they are the most vital variables. 
 - Regarding retinal variables, delay cause is shown by different color, which is easy for readers to interpret.
+
+## Comment
+### Comment 1
+1. The animation is too fast. Each frame can stay longer so readers can have the time to read.
+2. It would be better to shorten the explanation for each delay type.
+
+### Comment 2
+I would switch monthly data's x and y axis. 
+
+### Comment 3
+Changing the bar graph to line graph would be more visually comfortable.
+
 
 ## Resources
 http://dimplejs.org/advanced_examples_viewer.html?id=advanced_storyboard_control
