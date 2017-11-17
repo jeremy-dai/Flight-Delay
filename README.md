@@ -1,8 +1,11 @@
 # Flight Delay Causes By Month
-Link to the visualization: [Flight Delay Causes By Month](http://bl.ocks.org/jeremy-dai/raw/1bb93535c44e5f23c9f1b18a39bdb91b/)
 
+## Intro
+This project aims to visualize the flight delay data(source:[RITA](https://www.transtats.bts.gov/OT_Delay/OT_DelayCause1.asp)) which contains information on United State flight delays and performance. 
 
-The flight delay data, which comes from [RITA](https://www.transtats.bts.gov/OT_Delay/OT_DelayCause1.asp), contains information on United State flight delays and performance. It comes 
+The link to the visualization is [Flight Delay Causes By Month](http://bl.ocks.org/jeremy-dai/raw/1bb93535c44e5f23c9f1b18a39bdb91b/)
+
+[Dimple](http://dimplejs.org/) is utilized in this project to create animation and interaction.
 
 ## Delay Causes
 - Carrier Delay: delays due to circumstances within the airline's control (e.g. maintenance or crew problems, aircraft cleaning, baggage loading, fueling, etc.).
@@ -37,7 +40,6 @@ I would switch monthly data's x and y axis.
 
 ### Comment 3
 Changing the bar graph to line graph would be more visually comfortable.
-
 
 ## Resources
 http://dimplejs.org/advanced_examples_viewer.html?id=advanced_storyboard_control
