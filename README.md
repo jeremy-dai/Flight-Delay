@@ -25,8 +25,12 @@ wondering if the revenue-driven airline industry is trying to move more passenge
 ## Design
 This design uses a ‘reader-driven’ structure. Reader can explore the data by the years they are interested in.
 Also, the animation helps guide the reader through the years.
+
+Stacked area plot is chosen for this visulization project because:
+- We would like to show the trend of delay over a long period
+- Both the relative and absolute differences matter
  
-Visual encodings are the mapping of data to display elements.
+Visual encodings:
 - Month and Delay time  are planar variables (position x and y) since they are the most vital variables. 
 - Regarding retinal variables, delay cause is shown by different color, which is easy for readers to interpret.
 
@@ -35,11 +39,17 @@ Visual encodings are the mapping of data to display elements.
 1. The animation is too fast. Each frame can stay longer so readers can have the time to read.
 2. It would be better to shorten the explanation for each delay type.
 
+### Feedback
+I've simplified the texts.
+
 ### Comment 2
-I would switch monthly data's x and y axis. 
+I would switch monthly data's x and y axis.
+### Feedback
+I've switched axes.
 
 ### Comment 3
 Changing the bar graph to line graph would be more visually comfortable.
+I've changed the stacked bar graph to stacked area graph since we have many periods.
 
 ## Resources
 http://dimplejs.org/advanced_examples_viewer.html?id=advanced_storyboard_control
